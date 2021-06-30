@@ -1,0 +1,184 @@
+/* GLOBAL: code dùng chung */
+*{
+    /* tạo vùng trắng ở giữ các hình, canh đều tất cả các hình nếu như width đã là 100% */
+    /* width=content+padding +border */
+    box-sizing: border-box;
+
+}
+/* khai báo float left hoặc right thì nó cũng clear được */
+.clear{
+    clear: both;
+    padding: 10px;
+}
+/* HEADER */
+.header img{
+    width: 200px;
+}
+.header ul{
+    /* xóa dấu tròn của danh sách */
+    list-style: none;
+    background-color: black;
+    padding: 20px 0;
+}
+   /* xóa đường gạch */
+   .header  a{ 
+   text-decoration: none;
+   color: white;
+
+   }
+   /* thẻ lock:nó rớt theo mỗi hàng */
+   .header ul li{
+       /* đổi tính chất của thẻ li từ block thành inline:để các li nằm 1 hàng */
+       display: inline;
+       /* margin chỉ thêm được trái, phải khi dùng với thẻ inline */
+       margin: 15px;
+       /* padding là khoảng cách giữa đường viền trên */
+       /* border:3px solid red; */
+   }
+   /* padding:20px: căn đều 4 bên */
+   /* padding: 10 20: 10:top- bottom; 20:left-right */
+    /* padding: 10 15 20 25 10:top; 15:l,r; 20:bottom*/
+   /* thẻ inline:phân biệt nằm trên 1 hàng */
+  
+/* CAROUSEL */
+.carousel{
+    background-image: url(../img/slider_1.png);
+    height: 500px;
+    background-repeat: no-repeat;
+    /* kéo giãn hình ảnh */
+    background-size: cover;
+    /* xét vị trí từ giữa tỏa ra*/
+    background-position: center;
+}
+.intro p{
+    font-size: 18px;
+}
+.intro b{
+    color: red;
+}
+.intro_content{
+    width: 100%;
+    height: 700px;
+}
+.intro_content .intro1{
+    width: 50%;
+    height: 700px; 
+    float: left;
+    padding: 0 10px;
+   
+}
+.intro_content .intro1 .intro1_1 img{
+  padding: 0 10px;
+}
+.intro_content .intro1 .intro1_2{
+    margin: 0px 10px;
+    padding: 22px 0px;
+}
+
+.intro_content .intro2{
+    width: 50%;
+    height: 700px;
+    float: right;
+   
+}
+.intro_content .intro2 img{
+    width: 100%;
+    height: 336px;
+   
+} 
+
+.product h1{
+    text-align: center;
+}
+.products_item{
+    float: left;
+    width: 25%;
+  padding: 0 15px;
+  
+}
+.products_item img{
+    width: 100%;
+}
+.products_item p{
+    font-size: 18px;
+}
+.products_item button{
+background-color: rgb(255, 0, 0);
+visibility:visible ;
+height: 30px;
+width: 60px;
+border-radius: 5px;
+color: white;
+text-align: center;
+
+}
+/* BANNER */
+.banner {
+position: relative;
+background-image: url(../img/nature.jpg);
+height: 400px;
+background-size: cover;
+}
+.banner_circle{
+    /* khai báo thẻ cấp cha gần nhất, cha là relative, con là absolute  */
+    position: absolute;
+    /* top,right, bottom,left */
+    top:20px;
+    left: 300px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    /* độ trong suốt không làm nội dung mờ: rgb */
+    background-color: rgba(255, 0, 0, 0.5);
+    color: white;
+    text-align: center;
+    /* độ trong suốt - làm mờ từ 0 đến 1- mờ thẻ và tất cả nội dung bên trong mờ theo luôn*/
+        /* opacity: 0.5; */
+   
+}
+.banner_circle h1{
+  font-size: 30px;
+}
+.banner_circle p{
+    font-size: 18px;
+}
+
+.service{
+    width: 100%; 
+   height: 250px;
+   /* padding: 20px 0; */
+   padding: 20px 75px;
+}
+.service .sevice_item{
+        width: 33.3%;
+        float: left;
+        height: 250px;
+        display: block;
+    }
+    .service .sevice_item img{
+        margin-left:180px ;
+    }
+    .service .sevice_item h2{
+        text-align: center;
+    }
+    .service .sevice_item p{
+    text-align: center;
+    font-size: 18px;
+    }
+.footer{
+     background: black;
+     color: white;
+     height: 150px;
+     width: 100%;
+}
+.footer h1{ 
+    padding: 5px;
+    text-align: center;
+    font-size:30px ;
+}
+.footer p{
+    font-size: 18px;
+    text-align: center;
+    margin-top: -15px;
+}
+
